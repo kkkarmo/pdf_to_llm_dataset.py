@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  pdf_to_llm:
+    build: .
+    volumes:
+      - ./input:/app/input
+      - ./output:/app/output
+    environment:
+      - INPUT_FILE=/app/input/book.pdf
+      - OUTPUT_TEXT_FILE=/app/output/extracted_text.txt
+      - OUTPUT_DATASET_DIR=/app/output/dataset
+      - OUTPUT_TOKENIZED_DIR=/app/output/tokenized_dataset
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
