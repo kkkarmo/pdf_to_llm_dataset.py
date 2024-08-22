@@ -66,6 +66,7 @@ Make sure you are in the project directory containing the docker-compose.yml fil
    ```bash
    docker-compose up --build
 
+
 Access Output Files
 After the script completes, you can find the output files in the output/ directory. This includes:
 extracted_text.txt: The raw extracted text from the PDF.
@@ -76,6 +77,7 @@ To stop the running container, use:
 
    ```bash
    docker-compose down
+
 
 Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you find any bugs or have suggestions for improvements.
