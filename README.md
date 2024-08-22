@@ -49,7 +49,9 @@ project_directory/
    cd pdf-to-llm-dataset-converter
 
 Create and Configure the .env File
+
 Create a .env file in the project root directory and add your API keys and configuration:
+
 
 HUGGINGFACE_API_KEY=your_huggingface_api_key
 GROQ_API_KEY=your_groq_api_key
@@ -61,7 +63,7 @@ Running the Project
 Build and Run the Docker Container
 Make sure you are in the project directory containing the docker-compose.yml file, then run:
 
-bash
+```bash
 docker-compose up --build
 
 Access Output Files
@@ -72,7 +74,7 @@ tokenized_dataset/: The tokenized dataset ready for LLM training.
 Stopping the Container
 To stop the running container, use:
 
-bash
+```bash
 docker-compose down
 
 Contributing
