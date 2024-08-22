@@ -54,8 +54,11 @@ Create a .env file in the project root directory and add your API keys and confi
 
 
 HUGGINGFACE_API_KEY=your_huggingface_api_key
+
 GROQ_API_KEY=your_groq_api_key
+
 LLAMA_URL=http://20.20.20.26:11343/generate
+
 
 Place Your PDF File
 Place your PDF book in the input/ directory. Rename it to book.pdf or update the INPUT_FILE environment variable in the .env file accordingly.
@@ -63,7 +66,7 @@ Running the Project
 Build and Run the Docker Container
 Make sure you are in the project directory containing the docker-compose.yml file, then run:
 
-   ```bash
+   bash
    docker-compose up --build
 
 
@@ -75,7 +78,7 @@ tokenized_dataset/: The tokenized dataset ready for LLM training.
 Stopping the Container
 To stop the running container, use:
 
-   ```bash
+   bash
    docker-compose down
 
 
