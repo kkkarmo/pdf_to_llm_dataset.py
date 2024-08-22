@@ -39,7 +39,6 @@ project_directory/
 ├── extracted_text.txt
 ├── dataset/
 └── tokenized_dataset/
-text
 
 ## Setup Instructions
 
@@ -51,7 +50,7 @@ text
 
 Create and Configure the .env File
 Create a .env file in the project root directory and add your API keys and configuration:
-text
+
 HUGGINGFACE_API_KEY=your_huggingface_api_key
 GROQ_API_KEY=your_groq_api_key
 LLAMA_URL=http://20.20.20.26:11343/generate
@@ -61,6 +60,7 @@ Place your PDF book in the input/ directory. Rename it to book.pdf or update the
 Running the Project
 Build and Run the Docker Container
 Make sure you are in the project directory containing the docker-compose.yml file, then run:
+
 bash
 docker-compose up --build
 
@@ -71,6 +71,7 @@ dataset/: The enriched dataset.
 tokenized_dataset/: The tokenized dataset ready for LLM training.
 Stopping the Container
 To stop the running container, use:
+
 bash
 docker-compose down
 
